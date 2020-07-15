@@ -10,6 +10,7 @@ let usuariodao = new usuarioDAO
 if(localStorage.getItem('usuarioLogadoKey')){
   const queryString = window.location.search;  
   usuarioLogadoKey = localStorage.getItem('usuarioLogadoKey');
+  //alert("Storage:" + usuarioLogadoKey)
   identificarUsuario(queryString.slice(1), usuarioLogadoKey)
 }
 
