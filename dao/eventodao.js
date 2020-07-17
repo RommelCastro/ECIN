@@ -2,6 +2,9 @@ class eventoDAO{
 
 	salvar(objEvento, uploader){
 	//Capturando os valores do formulário
+	if(uploader === ""){
+		alert("Adicione a logo")
+	}
 	if (objEvento.getNome()!=""&&objEvento.getSite()!=""&&objEvento.getSubtipo()!=""&&objEvento.getDia()!=""&&objEvento.getHora()!=""&&objEvento.getLat()!=""&&objEvento.getLng()!=""&&objEvento.getLogradouro()!=""&&objEvento.getNumero()!=""&&objEvento.getCidade()!=""&&objEvento.getUF()!=""&&objEvento.getCEP()!=""){
 		    let storageRef = storage.ref('/arquivos/'+ uploader.name); // Define o caminho onde será guardada a imagem no storage
 		    let uploadTask = storageRef.put(uploader); // guarda a imagem no storage
@@ -34,6 +37,9 @@ class eventoDAO{
 		        	window.location.reload()
 		        });
 		      })
+		}
+		else{
+			alert("Preencha todos os campos obrigatórios")
 		}
 	}
 

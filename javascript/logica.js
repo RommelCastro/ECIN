@@ -1,6 +1,6 @@
 //Variaveis e Constantes
-let uploader1SelectedFile
-let uploader2SelectedFile    
+let uploader1SelectedFile = ""
+let uploader2SelectedFile = ""   
 let lat
 let lng
 let cont = 0
@@ -41,7 +41,7 @@ let markerIcon = L.Icon.extend({
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) { 
     document.getElementById('log').innerHTML = `<i class="fas fa-sign-out-alt"></i>
-    <p style="margin-bottom: 8px;">Sair</p>`
+    <p style="margin-bottom: 8px;"><small>Sair</small></p>`
     document.getElementById('log').setAttribute("data-status","logado");
     document.getElementById('btn_marker').setAttribute("data-status","logado");
     document.getElementById('perfil').setAttribute("data-key",user.uid);
@@ -50,7 +50,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
   }else{
     document.getElementById('log').innerHTML = `<i class="fas fa-sign-in-alt"></i>
-    <p style="margin-bottom: 8px;">Entrar</p>`
+    <p style="margin-bottom: 8px;"><small>Entrar</small></p>`
     document.getElementById('log').setAttribute("data-status","deslogado");
     document.getElementById('btn_marker').setAttribute("data-status","deslogado");
     document.getElementById('perfil').setAttribute("href","login.html");
@@ -534,6 +534,7 @@ function chamarModalCadastro(){
     document.getElementById('validacaoCEPLocal').value = ''
     document.getElementById('uploaderLabel1').innerHTML = 'Logo'
     document.getElementById('uploader1').value = ''
+    uploader1SelectedFile = ''
 
     document.getElementById('validacaoNomeEvento').value = ''
     document.getElementById('validacaoSiteEvento').value = ''
@@ -549,6 +550,7 @@ function chamarModalCadastro(){
     document.getElementById('uploaderLabel2').innerHTML = 'Logo'
     document.getElementById('uploader2').value = ''
     document.getElementById('dtpicker').value = ''
+    uploader2SelectedFile = ''
 
     $('#ModalCadastro').modal('show');
 

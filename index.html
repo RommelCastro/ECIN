@@ -47,36 +47,36 @@
               <!--<button type="button" class="btn btn-navegador" data-toggle="modal" data-target="#modalSobre">-->
                 <button id="perfil" type="button" class="btn btn-navegador" onclick="telaUsuario(this)">
                   <i class="far fa-id-badge"></i>
-                  <p style="margin-bottom: 8px;">Meu Perfil</p>
+                  <p style="margin-bottom: 8px;"><small>Meu Perfil</small></p>
                 </button>
                 <a type="button" href="como-utilizar.html" class="btn btn-navegador">
                   <i class="fas fa-chalkboard-teacher"></i>
-                  <p style="margin-bottom: 8px;">Como Utilizar</p>
+                  <p style="margin-bottom: 8px;"><small>Como Utilizar</small></p>
                 </a>
                 <a type="button" href="ecossistema.html" class="btn btn-navegador">
                   <i class="far fa-newspaper"></i>
-                  <p style="margin-bottom: 8px;">Ecossistema</p>
+                  <p style="margin-bottom: 8px;"><small>Ecossistema</small></p>
                 </a>
                 <a type="button" href="eventos.html" class="btn btn-navegador">
                   <i class="fas fa-theater-masks"></i>
-                  <p style="margin-bottom: 8px;">Eventos</p>
+                  <p style="margin-bottom: 8px;"><small>Eventos</small></p>
                 </a>
               </div>
 
               <div class="btn-group mr-5" role="group" aria-label="Second group">
                 <button type="button" class="btn btn-navegador" data-toggle="modal" data-target="#ModalFiltro">
                   <i class="fas fa-filter"></i>
-                  <p style="margin-bottom: 8px;">Filtrar</p>
+                  <p style="margin-bottom: 8px;"><small>Filtrar</small></p>
                 </button>
 
                 <button type="button" class="btn btn-navegador" data-toggle="modal" onclick="limparComunidade()">
                   <i class="fas fa-users"></i>
-                  <p style="margin-bottom: 8px;">Comunidades</p>
+                  <p style="margin-bottom: 8px;">+<small>Comunidades</small></p>
                 </button>
 
                 <a id="btn_marker" href="#" type="button" class="btn btn-navegador" onclick="selecionarLocal()">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p style="margin-bottom: 8px;">Cadastrar</p>
+                  <p style="margin-bottom: 8px;"><small>Cadastrar</small></p>
                 </a>
 
               </div>
@@ -84,7 +84,7 @@
               <div class="btn-group" role="group" aria-label="Third group">
                 <button id="log" type="button" class="btn btn-navegador" onclick="gerenciarEntradaSaida()">
                   <i class="fas fa-sign-out-alt"></i>
-                  <p style="margin-bottom: 8px;">Sair</p>
+                  <p style="margin-bottom: 8px;"><small>Sair</small></p>
                 </button>
               </div>
 
@@ -99,7 +99,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Cadastro</h5>
+            <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Cadastrar Instituição/Evento</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="deletarMarcador()">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -109,7 +109,7 @@
 
             <ul class="nav nav-tabs" id="myTab" role="tablist"><!---Barra do Navegador-->
               <li class="nav-item">
-                <a class="nav-link active" id="local-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Local</a>
+                <a class="nav-link active" id="local-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Instituição</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="evento-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Eventos</a>
@@ -165,7 +165,7 @@
                   </div>
 
                   <div class="form-group custom-file"><!-- linha2-->
-                    <input type="file" class="custom-file-input custom-file-input-lg" id="uploader1" >
+                    <input type="file" class="custom-file-input custom-file-input-lg" id="uploader1">
                     <label id="uploaderLabel1" class="custom-file-label" for="uploader1">Selecione a Logo</label>
                   </div>
 
@@ -567,7 +567,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Adicionar Comunidades</h5>
+              <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Cadastrar Comunidades</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -658,7 +658,7 @@
       <div id="linhas" class="row" style="height: 100%">
         <div id="coluna_barra1" class="col-2" style="padding: 0; height:100%;">
           <div style="height: 8%; background-color:#D8D8D8;">
-            <h5 style="text-align:center; font-weight:bold;position: relative;top: 20%"><small style="font-weight:bold;">Categorias</small></h5>
+            <h5 style="text-align:center; font-weight:bold;position: relative;top: 20%">Menu</h5>
           </div>
           <div data-spy="scroll" class="scrollspySite">
             <ul id="listaOpcoes" class="list-group">
@@ -712,7 +712,7 @@
           <div id="marcar_info" style="display:none;">
             <div id="divMsg">
               <div class="d-flex justify-content-center">
-                <h6 class="textoAlerta">Clique no mapa para definir o endereço do seu local/evento</h6>
+                <h6 class="textoAlerta">Clique no mapa para definir o endereço do sua instituição/evento</h6>
               </div>
             </div>
             <div id="divButton">

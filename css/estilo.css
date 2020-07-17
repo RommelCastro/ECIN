@@ -84,84 +84,91 @@ h4{
     max-height: 300;
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
-}*/
+    }*/
 
-.scrollspySite{
-    position: relative;
-    overflow: auto;
-    height: 92%;
-}
-
-#location-map {
-        height: 100%;
+    .scrollspySite{
     	position: relative;
-      }
-#cadastroLocal{
-	z-index: 10000; 
-	position: absolute;
-	height: 83%;
-	width: 100%;
-	background-color:#FFFF;
-	padding: 0%;
-	margin: 0%;
-	
-}
+    	overflow: auto;
+    	height: 92%;
+    }
 
-.divisor{
-	width: 1px;
-	background: rgba(0,0,0,.5);
-	margin: 11px 15px;
-}
+    #location-map {
+    	height: 100%;
+    	position: relative;
+    }
+    #cadastroLocal{
+    	z-index: 10000; 
+    	position: absolute;
+    	height: 83%;
+    	width: 100%;
+    	background-color:#FFFF;
+    	padding: 0%;
+    	margin: 0%;
 
-.btn-submit{
-	color:white;
-	background-color: #38610B;
-	border-color: #1B2A0A;  
-}
+    }
 
-.btn-submit:hover{
-	color:white;
-	background-color: #243B0B;
-	border-color: #1B2A0A;  
-}
+    .divisor{
+    	width: 1px;
+    	background: rgba(0,0,0,.5);
+    	margin: 11px 15px;
+    }
 
-.btn-navegador{
-	font-weight: 400;
-	color: #ddd;
-	text-decoration: none;  
-}
+    .btn-submit{
+    	color:white;
+    	background-color: #38610B;
+    	border-color: #1B2A0A;  
+    }
 
-.btn-navegador:hover{
-	  color: #F19A3D;
-}
+    .btn-submit:hover{
+    	color:white;
+    	background-color: #243B0B;
+    	border-color: #1B2A0A;  
+    }
 
-.btn-navegador:focus{
-	  box-shadow: none;
-}
+    .btn-navegador{
+    	font-weight: 400;
+    	color: #ddd;
+    	text-decoration: none;  
+    }
 
-.textoAlerta{
-	font-style:oblique;
-	background-color: rgba(0,0,0,0.6);
-	color: white;
-	font-weight: bold;
-	padding: 2px;
-}
+    .btn-navegador:hover{
+    	color: #F19A3D;
+    }
 
-.texto-evento{
-	color: #122915;  
-}
+    .btn-navegador:focus{
+    	box-shadow: none;
+    }
 
-.btn-selecionado{
-	font-weight: 700;
-	color: #ddd;
-	text-decoration: none;  
-}
+    .textoAlerta{
+    	font-style:oblique;
+    	background-color: rgba(0,0,0,0.6);
+    	color: white;
+    	font-weight: bold;
+    	padding: 2px;
+    }
 
-.btn-selecionado:hover{
-	  color: #ddd;
-}
+    .texto-evento{
+    	color: #122915;  
+    }
 
-.btn-selecionado:focus{
-	  box-shadow: none;
-}
+    .btn-selecionado{
+    	font-weight: 700;
+    	color: #ddd;
+    	text-decoration: none;  
+    }
+
+    .btn-selecionado:hover{
+    	color: #ddd;
+    }
+
+    .btn-selecionado:focus{
+    	box-shadow: none;
+    }
+
+    .list-group-item-action:focus,.list-group-item-action:hover{
+    	z-index: 1;
+    	color: #495057;
+    	text-decoration: none;
+    	background-color: #f1f1f1;
+    }
 
