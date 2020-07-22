@@ -100,12 +100,12 @@ h4{
 
 .btn-selecionado{
 	font-weight: 700;
-	color: #ddd;
+	color: #c5be86;
 	text-decoration: none;  
 }
 
 .btn-selecionado:hover{
-	  color: #ddd;
+	  color: #c5be86;
 }
 
 .btn-selecionado:focus{
