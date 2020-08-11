@@ -153,7 +153,7 @@ class Escolas extends componenteEco{
 
 class iniUniversitarias extends componenteEco{
   constructor(){
-    super('Iniciativas Universitarias','25-iniciativa-universitaria.png','25-iniciativa-universitaria.png')
+    super('Iniciativas Universitárias','25-iniciativa-universitaria.png','25-iniciativa-universitaria.png')
   }
 }
 
