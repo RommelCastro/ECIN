@@ -25,9 +25,9 @@ function identificarUsuario(userId, userlogId) {
       <small id="dadosUsuario" class="form-row d-flex justify-content-center">
       <a class="mr-1" href="javascript:void(0)">Estatisticas</a>
       <p> - </p>
-      <a class="ml-1" href="javascript:void(0)" onclick="chamarModalReport()">Reportar Bugs/Melhorias</a>
-      <p>  -  </p>
-      <a href="mailto:ecim@gmail.com?subject=Assunto do email&amp;body=Olá,%0D%0A%0D%0A[corpo do email]%0D%0A%0D%0AAtenciosamente,%0D%0A[nome do usuário]">Fale conosco</a>
+      <a class="ml-1 mr-1" href="javascript:void(0)" onclick="chamarModalReport()">Reportar Bugs/Melhorias</a>
+      <p> - </p>
+      <a class="ml-1 href="mailto:ecim@gmail.com?subject=Assunto do email&amp;body=Olá,%0D%0A%0D%0A[corpo do email]%0D%0A%0D%0AAtenciosamente,%0D%0A[nome do usuário]">Fale conosco</a>
       </small>`
     }
     document.getElementById('nomeUsuario').innerHTML = `<h5 id="nomeUsuario" class="font-weight-bold">${usuarioAtual.getNome()}</h5>`
