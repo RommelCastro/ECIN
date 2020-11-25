@@ -503,7 +503,7 @@ function selecionarLocal(){
   .openPopup();
   //escolhaLayer.addLayer(marker).addTo(map);
 
-  marker = L.marker([latitude, longitude]).addTo(mymap);
+  //marker = L.marker([latitude, longitude]).addTo(mymap);
 
   lat = e.latlng.lat
   lng = e.latlng.lng
