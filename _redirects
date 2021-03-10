@@ -1,5 +1,1 @@
-[[redirects]]
-from = "https://mapa-inovacao-ce.netlify.app/*"
-to = "https://gesid.github.io/mapa-inovacao"
-status = 301
-force = false
+https://mapa-inovacao-ce.netlify.app/* https://gesid.github.io/mapa-inovacao
