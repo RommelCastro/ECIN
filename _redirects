@@ -1,5 +1,2 @@
 https://mapa-inovacao.netlify.app/* https://gesid.github.io/mapa-inovacao
-[[redirects]]
-  from = "/como-utilizar"
-  to = "https://mapa-inovacao.netlify.app/"
-  force = true
+/* /index.html 301!
